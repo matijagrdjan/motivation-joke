@@ -8,9 +8,11 @@ import org.springframework.stereotype.Service;
 public class JokeServiceImpl implements JokeService {
 
     private final MotivationJokes motivationJokes;//Napraviti svoju klasu sa salama i metodom getRandomQuote
-    public JokeServiceImpl() {
-        this.motivationJokes = new MotivationJokes();
+
+    public JokeServiceImpl(MotivationJokes motivationJokes) {
+        this.motivationJokes = motivationJokes;
     }
+
     @Override
     public String getJoke() {
         return motivationJokes.getRandomQuote();
