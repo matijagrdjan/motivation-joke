@@ -4,10 +4,10 @@ import hr.matija.grdjan.motivationjoke.model.MotivationJokes;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class JokeConfiguration {
 
-    @Bean
+    //@Bean
     public MotivationJokes motivationJokes(){
         return new MotivationJokes();
     }
